@@ -1,0 +1,18 @@
+<div *ngIf="article">
+  <li *ngFor="let art of article">
+    <h2>{{art.Titre | uppercase }}</h2>
+    <div><span>Id: </span>{{art.ID}}</div>
+    <div>
+      <p> Contenu = 
+        {{art.Contenu}}</p>
+    </div>
+    <div>
+      <p>UtilisateurID = {{art.UtilisateurID}}</p>
+    </div>
+    <button (click)="goBack()">go back</button>
+    <a routerLink="/articles"><button (click)="DeleteArticle()">Delete</button></a>
+    <a routerLink="/articles/update/{{art.ID}}">
+      <button>modif</button>
+    </a>
+  </li>
+</div>

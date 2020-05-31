@@ -1,0 +1,8 @@
+<h2>All artciles</h2>
+<ul class="articles">
+  <li *ngFor="let article of Articles">
+    <a routerLink="/articles/{{article.ID}}">
+      <span class="badge">{{article.ID}}</span> {{article.Titre}}
+    </a>
+  </li>
+</ul>

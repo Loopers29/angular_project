@@ -1,0 +1,29 @@
+<div *ngIf="article">
+  <li *ngFor="let art of article">
+    <h2>{{art.Titre | uppercase }}</h2>
+    <div><span>Id: </span>{{art.ID}}</div>
+    <div>
+      <p> Contenu = 
+        {{art.Contenu}}</p>
+    </div>
+    <div>
+      <p>UtilisateurID = {{art.UtilisateurID}}</p>
+    </div>
+  </li>
+</div>
+
+<div *ngIf="article">
+  <li *ngFor="let art of article">
+    <label>Titre:
+      <input [(ngModel)]="art.Titre" placeholder="Titre"/>
+    </label>
+    <label>Contenu:
+      <input [(ngModel)]="art.Contenu" placeholder="Contenu"/>
+    </label>
+    <label>UtilisateurID:
+      <input [(ngModel)]="art.UtilisateurID" placeholder="UtilisateurID"/>
+    </label>
+  </li>
+  <button (click)="goBack()">go back</button>
+  <a routerLink="/articles"> <button (click)="ModifArticle()">Send</button> </a>
+</div>
