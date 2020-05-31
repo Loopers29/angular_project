@@ -7,3 +7,5 @@ detail of article = "http://localhost:3000/articles/:id" => return an article. G
 Add an article = "http://localhost:3000/articles/" => return ok if add. Post method
 
 Update an article = "http://localhost:3000/articles/update" => return ok. Post method
+
+Delete an article = "http://localhost:3000/articles/:id" => return ok. DELETE method
