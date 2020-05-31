@@ -1,5 +1,7 @@
 API
 
-Liste of article endpoint = "http://localhost:3000/articles/" => return array of article model.
+Liste of article endpoint = "http://localhost:3000/articles/" => return array of article model. GET method
 
-detail of article = "http://localhost:3000/articles/:id" => return an article.
+detail of article = "http://localhost:3000/articles/:id" => return an article. GET method
+
+Add an article = "http://localhost:3000/articles/" => return ok if add. Post method
