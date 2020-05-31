@@ -10,5 +10,4 @@ Modif an article => post method to endpoint api with model article.
 
 Supp an article => post method to endpoint api with model article.
 
-
 Conexxion and deconnexion not implemented.
